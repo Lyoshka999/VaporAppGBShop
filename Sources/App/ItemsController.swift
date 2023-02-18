@@ -24,7 +24,7 @@ class ItemsController {
     }
     
     func getCongratulations(_ req: Request) throws -> EventLoopFuture<CongratulationsResponse> {
-        guard let body = try? req.content.decode(.self) else { throw Abort(.badRequest) }
+        guard let body = try? req.content.decode(Congratulations.self) else { throw Abort(.badRequest) }
         
         print(body)
         

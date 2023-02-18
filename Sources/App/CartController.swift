@@ -8,7 +8,7 @@
 import Vapor
 
 class CartController {
-    func getCart(_ req: Request) throws -> EventLoopFuture<CatalogResponse> {
+    func getCart(_ req: Request) throws -> EventLoopFuture<CartResponse> {
         guard let body = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
         
         print(body)
