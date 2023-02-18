@@ -14,7 +14,6 @@ struct User: Content {
     let email: String?
     let gender: String?
     let creditCard: String?
-    let bio: String?
     let name: String?
     let lastname: String?
 }

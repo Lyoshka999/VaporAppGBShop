@@ -13,7 +13,6 @@ func routes(_ app: Application) throws {
     app.post("signup", use: userController.signup)
     app.post("changeuserdata", use: userController.changeUserData)
     app.post("getcatalog", use: itemsController.getCatalog)
-    app.post("getcongratulations", use: itemsController.getCongratulations)
     app.post("getreviews", use: reviewsController.getReviews)
     app.post("addreview", use: reviewsController.addReview)
     app.post("removereview", use: reviewsController.removeReview)
